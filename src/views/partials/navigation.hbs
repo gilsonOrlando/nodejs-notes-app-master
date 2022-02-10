@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container">
+   <img src="https://img.icons8.com/external-others-phat-plus/64/000000/external-lock-calendardate-color-line-others-phat-plus.png"/>  <a class="navbar-brand" href="/">  AGENDA LABORAL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <img src="https://img.icons8.com/glyph-neue/29/000000/home-page.png"/>
+      <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"><b>Inicio</b> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about"><b>About</b></a>
+          </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://img.icons8.com/glyph-neue/55/000000/manager.png"/> <b>HERRAMIENTAS  </b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/notes">Funciones Pendientes </a>
+              <a class="dropdown-item" href="/notes/add">Agregar Funcion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/users/logout">Salir</a>
+            </div>
+          </li>
+        {{else}}
+          <li class="nav-item">
+            <a class="nav-link" href="/users/signin"><b>Inicio Sesion</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/signup"><b>Registrate  </a>
+          </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,41 @@
+<div class="col-md-4 mx-auto">
+  <div class="card text-center">
+    <div class="card-header">
+      <h3>Nueva Funcion</h3>
+    </div>
+    <div class="card-body">
+      <form action="/notes/new-note" method="POST" enctype="multipart/form-data" >
+        <div class="form-group">
+          <input type="text" name="title" class="form-control" placeholder="Nombre Apellido" autofocus/>
+        </div>
+        <div class="form-group">
+          <textarea name="description" class="form-control" placeholder="Funcion"></textarea>
+        </div>
+        <div class="form-group">
+          <div class="input-group mb-3">
+            <div class="custom-file">
+              <input type="file" name="image" class="custom-file-input" id="inputGroupFile02">
+              <label class="custom-file-label" for="inputGroupFile02">Buscar Imagen</label>
+            </div> 
+          </div>
+        </div>
+         <div class="form-group">
+                <label class="text-white">Para</label>
+
+                <input
+                    type="text"
+                    placeholder="Ingresa el número de destino"
+                    class="form-control"
+                    name="number"
+                />
+            </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

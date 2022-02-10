@@ -1,0 +1,45 @@
+{
+  "name": "nodejs-notes-app",
+  "version": "2.0.0",
+  "description": "Notes App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node src/index.js",
+    "build": "babel src -d dist",
+    "copyfiles": "ncp src/views dist/views && npc src/public dist/public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.28.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.4.0",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.2",
+    "express-handlebars": "^5.2.1",
+    "express-session": "^1.17.1",
+    "fs-extra": "^10.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "twilio": "^3.73.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "dotenv": "^8.6.0",
+    "handlebars": "^4.7.7",
+    "ncp": "^2.0.0",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2"
+  }
+}
